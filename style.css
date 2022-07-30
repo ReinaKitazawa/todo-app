@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* 入力時に枠線を加えないようにする */
+:focus {
+  outline: none;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 80px auto;
+  text-align: center;
+  background-color: #ece0d7;
+  color: #010101;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.todo-input,
+.button {
+  padding: 0.6rem;
+  background-color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.todo-input {
+  width: 75%;
+}
+
+.button {
+  color: white;
+  background-color: #c96c76;
+  cursor: pointer;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  list-style: none;
+}
+.todo-item {
+  width: 100%;
+  flex: 1;
+  text-align: left;
+  padding: 0.5rem;
+}
+.completed-btn,
+.trash-btn {
+  background-color: #c96c76;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+.completed-btn {
+  margin-right: 0.1rem;
+}
+.button:hover,
+.completed-btn:hover,
+.trash-btn:hover {
+  opacity: 0.5;
+}
+.line {
+  text-decoration: line-through;
+}
